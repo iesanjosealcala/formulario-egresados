@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:  #e61134;  /* fallback for old browsers */
+    min-height: 100vh;
+    
+    width: 100%;
+    display: flex;
+    background: -webkit-linear-gradient(to right,#09462096 , #fc032ca9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b4d2496, #ff042ea9), url(Img49.jpg.jpeg)  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form-title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+.form-input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.form-input--message{
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form-cta{
+    font-family: inherit;
+    background-color: #089fe0;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+@media (max-width:450px){
+    .form{
+        padding: 3.5em 1em;
+    }
+}
